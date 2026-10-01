@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#161335"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#7c3aed" stop-opacity=".45"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB"><stop offset="0" stop-color="#2563eb" stop-opacity=".35"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    </pattern>
+    <clipPath id="card"><rect x="1" y="1" width="898" height="318" rx="22"/></clipPath>
+    <clipPath id="typeClip">
+      <rect x="86" y="150" height="34" width="0">
+        <animate attributeName="width" values="0;13;26;39;52;65;78;91;104;117;130;143;156;169;182;195;208;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;208;195;182;169;156;143;130;117;104;91;78;65;52;39;26;13;0;0;0;0;0;0;0" dur="6.60s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <style>
+    .ln { opacity: 0; animation: up .5s ease-out forwards; }
+    @keyframes up { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .blink { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .pulse { animation: pulse 2s ease-in-out infinite; transform-origin: 81px 63px; }
+    @keyframes pulse { 50% { opacity: .35; } }
+    .float { animation: float 6s ease-in-out infinite; }
+    @keyframes float { 50% { transform: translateY(-6px); } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="320" fill="url(#bg)"/>
+    <rect width="900" height="320" fill="url(#grid)"/>
+    <circle cx="790" cy="20" r="230" fill="url(#glowA)"/>
+    <circle cx="90" cy="320" r="200" fill="url(#glowB)"/>
+  </g>
+  <rect x="1" y="1" width="898" height="318" rx="22" fill="none" stroke="#2e3a63"/>
+
+  <!-- left -->
+  <rect x="60" y="48" width="198" height="30" rx="15" fill="#1e1b4b" fill-opacity=".8" stroke="#4f46e5" stroke-opacity=".6"/>
+  <circle class="pulse" cx="81" cy="63" r="4" fill="#a78bfa"/>
+  <text x="95" y="67.5" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" letter-spacing="2.2" fill="#c7d2fe">BACKEND DEVELOPER</text>
+
+  <text x="58" y="134" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="-1" fill="url(#name)">SHIN UIJIN</text>
+
+  <text x="60" y="176" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="22" fill="#a78bfa">❯</text>
+  <text x="86" y="176" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="22" fill="#7dd3fc" textLength="221" lengthAdjust="spacingAndGlyphs" clip-path="url(#typeClip)">Backend Developer</text>
+  <rect class="blink" x="88" y="157" width="11" height="24" rx="1" fill="#7dd3fc" fill-opacity=".85">
+    <animate attributeName="x" values="88;101;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;296;283;270;257;244;231;218;205;192;179;166;153;140;127;114;101;88;88;88;88;88;88;88" dur="6.60s" calcMode="discrete" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="60" y="214" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="15.5" fill="#94a3b8">Java · Spring Boot · MyBatis · MariaDB</text>
+  <line x1="60" y1="240" x2="410" y2="240" stroke="#2e3a63"/>
+  <text x="60" y="272" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="12" letter-spacing="3.5" fill="#818cf8">LEARN  /  BUILD  /  SHIP</text>
+
+  <!-- center orbit -->
+  <g transform="translate(470 160)">
+    <circle r="44" fill="none" stroke="url(#ring)" stroke-width="1.4" stroke-dasharray="3 6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="29" fill="#11163a" stroke="url(#ring)" stroke-width="1.5"/>
+    <text y="7" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="19" font-weight="600" fill="#c4b5fd">{ }</text>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
+      <circle cx="44" cy="0" r="4" fill="#7dd3fc"/>
+      <circle cx="44" cy="0" r="8" fill="#7dd3fc" fill-opacity=".2"/>
+    </g>
+  </g>
+
+  <!-- terminal -->
+  <g class="float">
+    <rect x="534" y="46" width="320" height="228" rx="14" fill="#0a0f1f" fill-opacity=".92" stroke="#2e3a63"/>
+    <path d="M534 82 H854" stroke="#1f2a48"/>
+    <circle cx="556" cy="64" r="5.5" fill="#ff5f57"/>
+    <circle cx="574" cy="64" r="5.5" fill="#febc2e"/>
+    <circle cx="592" cy="64" r="5.5" fill="#28c840"/>
+    <text x="694" y="68" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="11" fill="#64748b">Developer.java</text>
+    <g font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="13.5">
+    <text class="ln" style="animation-delay:0.60s" x="556" y="118" xml:space="preserve"><tspan fill="#c084fc">public class</tspan> <tspan fill="#7dd3fc">Developer</tspan> <tspan fill="#94a3b8">{</tspan></text>
+    <text class="ln" style="animation-delay:0.95s" x="556" y="143" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">name</tspan>    <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"신의진"</tspan><tspan fill="#94a3b8">;</tspan></text>
+    <text class="ln" style="animation-delay:1.30s" x="556" y="168" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">role</tspan>    <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"Backend"</tspan><tspan fill="#94a3b8">;</tspan></text>
+    <text class="ln" style="animation-delay:1.65s" x="556" y="193" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">stack</tspan>   <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"Spring Boot"</tspan><tspan fill="#94a3b8">;</tspan></text>
+    <text class="ln" style="animation-delay:2.00s" x="556" y="218" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">project</tspan> <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"MoveOn"</tspan><tspan fill="#94a3b8">;</tspan></text>
+    <text class="ln" style="animation-delay:2.35s" x="556" y="243" xml:space="preserve"><tspan fill="#94a3b8">}</tspan></text>
+    </g>
+    <rect class="blink" x="570" y="232" width="8" height="16" fill="#7dd3fc" fill-opacity=".85"/>
+  </g>
+</svg>
