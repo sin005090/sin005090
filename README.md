@@ -1,127 +1,97 @@
 <div align="center">
 
-<img src="./header.svg" width="100%" alt="SHIN UIJIN · Backend Developer"/>
+<img src="./header.svg" width="100%" alt="uijin@github:~$ neofetch"/>
 
-<br/>
-
-**배운 것을 서비스로 만들고, 만든 것으로 다시 배우는 백엔드 개발자**
-
-<a href="https://movingon.kr"><img src="https://img.shields.io/badge/MoveOn-movingon.kr-6366f1?style=flat-square&logo=googlechrome&logoColor=white"/></a>
-<a href="mailto:sin005090@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-a855f7?style=flat-square&logo=gmail&logoColor=white"/></a>
-<img src="https://komarev.com/ghpvc/?username=sin005090&label=Profile%20Views&color=7dd3fc&style=flat-square"/>
-
-<sub>
-<a href="#-whoami">whoami</a> ·
-<a href="#-tech-stack">Tech Stack</a> ·
-<a href="#-featured-project">Project</a> ·
-<a href="#-study">Study</a> ·
-<a href="#-activity">Activity</a>
-</sub>
+<a href="https://movingon.kr"><img src="https://img.shields.io/badge/live-movingon.kr-0d1117?style=flat-square&logo=googlechrome&logoColor=39c5cf&labelColor=161b22"/></a>
+<a href="mailto:sin005090@gmail.com"><img src="https://img.shields.io/badge/mail-sin005090@gmail.com-0d1117?style=flat-square&logo=gmail&logoColor=ff7b72&labelColor=161b22"/></a>
+<img src="https://komarev.com/ghpvc/?username=sin005090&label=views&color=0d1117&style=flat-square&labelColor=161b22"/>
 
 </div>
 
----
+<br/>
 
-## 💻 whoami
+### `$ whoami`
 
-한국폴리텍대학 서울강서캠퍼스 **빅데이터소프트웨어공학과**에서 백엔드 개발을 공부하고 있습니다.<br/>
-팀 프로젝트 **MoveOn**에서 화면부터 서버, 외부 API 연동까지 **실제로 동작하는 서비스**를 만들었습니다.
+```java
+public record Developer(String name, String role, List<String> stack) {}
 
-```yaml
-profile:
-  name: 신의진
-  role: Backend Developer
-  school: 한국폴리텍대학 서울강서캠퍼스 · 빅데이터소프트웨어공학과
-  focus: [Java, Spring Boot, MyBatis, MariaDB]
-  learning: [Spring AI]
-  motto: "Learn → Build → Ship"
+var me = new Developer(
+    "신의진",
+    "Backend Developer",
+    List.of("Java 17", "Spring Boot", "MyBatis", "MariaDB")
+);
+
+me.motto();  // "배운 것을 서비스로 만들고, 만든 것으로 다시 배운다."
 ```
 
-<br/>
-
-## 🛠 Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=java,spring,html,css,js,git,github&perline=7" />
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/MyBatis-DC382D?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white"/>
-<img src="https://img.shields.io/badge/JSP-F89820?style=for-the-badge&logo=java&logoColor=white"/>
-<br/>
-<img src="https://img.shields.io/badge/Kakao%20Map-FFCD00?style=for-the-badge&logo=kakao&logoColor=black"/>
-<img src="https://img.shields.io/badge/OpenWeather-EB6E4B?style=for-the-badge&logo=openweather&logoColor=white"/>
-<img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white"/>
-
-</div>
+> 한국폴리텍대학 서울강서캠퍼스 빅데이터소프트웨어공학과.<br/>
+> 화면부터 서버, 외부 API 연동, 배포까지 — **실제로 돌아가는 서비스**를 만듭니다.
 
 <br/>
 
-## 🚀 Featured Project
+### `$ ls ~/stack`
 
-<div align="center">
+<img src="https://img.shields.io/badge/Java_17-0d1117?style=for-the-badge&logo=openjdk&logoColor=f89820"/> <img src="https://img.shields.io/badge/Spring_Boot-0d1117?style=for-the-badge&logo=springboot&logoColor=6DB33F"/> <img src="https://img.shields.io/badge/MyBatis-0d1117?style=for-the-badge&logo=databricks&logoColor=DC382D"/> <img src="https://img.shields.io/badge/MariaDB-0d1117?style=for-the-badge&logo=mariadb&logoColor=c0765a"/>
+<br/>
+<img src="https://img.shields.io/badge/JSP-0d1117?style=for-the-badge&logo=jakartaee&logoColor=f89820"/> <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/> <img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26"/> <img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=1572B6"/>
+<br/>
+<img src="https://img.shields.io/badge/Kakao_Map-0d1117?style=for-the-badge&logo=kakao&logoColor=FFCD00"/> <img src="https://img.shields.io/badge/OpenWeather-0d1117?style=for-the-badge&logo=openweather&logoColor=EB6E4B"/> <img src="https://img.shields.io/badge/Gemini-0d1117?style=for-the-badge&logo=googlegemini&logoColor=8E75B2"/> <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032"/>
+
+<br/>
+
+### `$ git log --author=uijin MoveOn`
+
 <table>
 <tr>
 <td>
 
-<h3 align="center">🏃 <a href="https://github.com/MoveOn-Team/MoveOn">MoveOn</a></h3>
-<p align="center"><b>나에게 맞는 운동을 추천해 주는 웹 서비스</b></p>
+**🏃 [MoveOn](https://github.com/MoveOn-Team/MoveOn)** — 성향 · 날씨 · 위치로 운동과 체육시설, 스포츠 행사를 추천하는 웹 서비스<br/>
+<sub>`Team Project` · `Java 17` · `Spring Boot` · `MyBatis` · `MariaDB` · `JSP` · 🌐 **[movingon.kr](https://movingon.kr)**</sub>
 
-<p align="center">
-<a href="https://movingon.kr"><img src="https://img.shields.io/badge/🌐_Live-movingon.kr-6366f1?style=flat-square"/></a>
-<img src="https://img.shields.io/badge/👥_Team-Project-a855f7?style=flat-square"/>
-<img src="https://img.shields.io/badge/Java-17-007396?style=flat-square&logo=openjdk&logoColor=white"/>
-<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/MyBatis-DC382D?style=flat-square"/>
-<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white"/>
-</p>
-
-사용자의 **성향 · 날씨 · 위치**를 바탕으로 운동과 주변 체육시설, 스포츠 행사를 추천합니다.
-
-| 🙋 담당 역할 | |
-|:--|:--|
-| 🧭 **온보딩** | 첫 로그인 후 성향조사 기능 구현 |
-| 🖥️ **화면 개발** | 내 정보 · 즉시운동 · 스포츠 행사 · 홈 트레이닝 |
-| 📊 **백엔드** | 운동 완료 · 운동 리포트 |
-| 🌤️ **API 연동** | OpenWeather API 날씨 기능 |
-| 🎬 **UX 개선** | 운동 동작 이미지를 MP4 영상으로 교체 |
+```diff
++ feat  첫 로그인 후 성향조사(온보딩) 구현
++ feat  내 정보 · 즉시운동 · 스포츠 행사 · 홈 트레이닝 화면
++ feat  운동 완료 · 운동 리포트 백엔드
++ feat  OpenWeather API 연동 날씨 기능
++ feat  운동 동작 이미지 → MP4 영상 교체
+```
 
 </td>
 </tr>
 </table>
-</div>
 
 <br/>
 
-## 📚 Study
+### `$ ls ~/study`
 
-| | Repository | 내용 |
-|:--:|:--|:--|
-| 🌱 | [SpringBootMyBatis](https://github.com/sin005090/SpringBootMyBatis) | Spring Boot + MyBatis 실습 |
-| 🤖 | [StringAIBasic](https://github.com/sin005090/StringAIBasic) | Spring AI 기초 실습 |
-| ☕ | [myJava](https://github.com/sin005090/myJava) | Java 기초 문법 실습 |
+```text
+drwxr-xr-x  SpringBootMyBatis/    Spring Boot + MyBatis 실습
+drwxr-xr-x  StringAIBasic/        Spring AI 기초 실습
+drwxr-xr-x  myJava/               Java 기초 문법 실습
+```
+<sub>→ [SpringBootMyBatis](https://github.com/sin005090/SpringBootMyBatis) · [StringAIBasic](https://github.com/sin005090/StringAIBasic) · [myJava](https://github.com/sin005090/myJava)</sub>
 
 <br/>
 
-## 📈 Activity
+### `$ ./stats --user sin005090`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sin005090&show_icons=true&hide_rank=true&hide_border=true&theme=tokyonight&title_color=a78bfa&icon_color=7dd3fc&bg_color=0b1020" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sin005090&layout=compact&hide_border=true&theme=tokyonight&title_color=a78bfa&bg_color=0b1020&card_width=300" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api?username=sin005090&show_icons=true&hide_rank=true&hide_border=true&bg_color=0d1117&title_color=3fb950&icon_color=58a6ff&text_color=c9d1d9" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sin005090&layout=compact&hide_border=true&bg_color=0d1117&title_color=3fb950&text_color=c9d1d9&card_width=300" height="165"/>
 
-<img src="https://streak-stats.demolab.com?user=sin005090&theme=tokyonight&hide_border=true&background=0b1020&ring=a855f7&fire=7dd3fc&currStreakLabel=a78bfa" width="70%"/>
+<img src="https://streak-stats.demolab.com?user=sin005090&hide_border=true&background=0d1117&ring=3fb950&fire=39c5cf&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=3fb950&sideLabels=8b949e&dates=8b949e&stroke=30363d" width="70%"/>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sin005090/sin005090/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sin005090/sin005090/output/github-snake.svg"/>
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/sin005090/sin005090/output/github-snake-dark.svg"/>
+</picture>
 
 </div>
 
 <br/>
 
----
-
-<div align="center">
-
-<sub>⌨️ <b>Learn → Build → Ship</b> · Thanks for visiting!</sub>
-
-</div>
+<div align="center"><sub><code>uijin@github:~$ exit</code> — thanks for visiting ⌨️</sub></div>

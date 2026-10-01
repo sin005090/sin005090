@@ -1,95 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400" font-family="'JetBrains Mono','Fira Code','SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="14">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1020"/>
-      <stop offset="1" stop-color="#161335"/>
+    <linearGradient id="artg" gradientUnits="userSpaceOnUse" x1="30" y1="92" x2="300" y2="177">
+      <stop offset="0" stop-color="#3fb950"/>
+      <stop offset="1" stop-color="#39c5cf"/>
     </linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#c4b5fd"/>
-    </linearGradient>
-    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#818cf8"/>
-      <stop offset="1" stop-color="#c084fc"/>
-    </linearGradient>
-    <radialGradient id="glowA"><stop offset="0" stop-color="#7c3aed" stop-opacity=".45"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
-    <radialGradient id="glowB"><stop offset="0" stop-color="#2563eb" stop-opacity=".35"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" fill-opacity=".02"/>
     </pattern>
-    <clipPath id="card"><rect x="1" y="1" width="898" height="318" rx="22"/></clipPath>
-    <clipPath id="typeClip">
-      <rect x="86" y="150" height="34" width="0">
-        <animate attributeName="width" values="0;13;26;39;52;65;78;91;104;117;130;143;156;169;182;195;208;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;221;208;195;182;169;156;143;130;117;104;91;78;65;52;39;26;13;0;0;0;0;0;0;0" dur="6.60s" calcMode="discrete" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
   </defs>
   <style>
-    .ln { opacity: 0; animation: up .5s ease-out forwards; }
-    @keyframes up { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-    .blink { animation: blink 1s steps(1) infinite; }
+    .f { opacity: 0; animation: in .25s ease-out forwards; }
+    @keyframes in { to { opacity: 1; } }
+    .cur { opacity: 0; animation: in 0s 5.2s forwards, blink 1s steps(1) 5.2s infinite; }
     @keyframes blink { 50% { opacity: 0; } }
-    .pulse { animation: pulse 2s ease-in-out infinite; transform-origin: 81px 63px; }
-    @keyframes pulse { 50% { opacity: .35; } }
-    .float { animation: float 6s ease-in-out infinite; }
-    @keyframes float { 50% { transform: translateY(-6px); } }
+    @keyframes t0 { to { transform: translateX(67.2px); } }
+    .t0 { animation: t0 0.56s steps(8) 0.3s both; }
+    @keyframes t1 { to { transform: translateX(235.2px); } }
+    .t1 { animation: t1 1.96s steps(28) 2.5s both; }
   </style>
 
-  <g clip-path="url(#card)">
-    <rect width="900" height="320" fill="url(#bg)"/>
-    <rect width="900" height="320" fill="url(#grid)"/>
-    <circle cx="790" cy="20" r="230" fill="url(#glowA)"/>
-    <circle cx="90" cy="320" r="200" fill="url(#glowB)"/>
-  </g>
-  <rect x="1" y="1" width="898" height="318" rx="22" fill="none" stroke="#2e3a63"/>
+  <rect x="0.5" y="0.5" width="899" height="399" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M1 36 V13 a12 12 0 0 1 12 -12 H887 a12 12 0 0 1 12 12 V36 Z" fill="#161b22"/>
+  <path d="M1 36 H899" stroke="#30363d"/>
+  <circle cx="22" cy="18.5" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="18.5" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="18.5" r="6" fill="#28c840"/>
+  <text x="450" y="23" text-anchor="middle" font-size="12" fill="#8b949e">uijin@github: ~ — zsh — 120×32</text>
 
-  <!-- left -->
-  <rect x="60" y="48" width="198" height="30" rx="15" fill="#1e1b4b" fill-opacity=".8" stroke="#4f46e5" stroke-opacity=".6"/>
-  <circle class="pulse" cx="81" cy="63" r="4" fill="#a78bfa"/>
-  <text x="95" y="67.5" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" letter-spacing="2.2" fill="#c7d2fe">BACKEND DEVELOPER</text>
+  <text class="f" style="animation-delay:0s" x="28" y="68"><tspan fill="#3fb950" font-weight="700">uijin@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan></text>
+  <text x="162.4" y="68" fill="#c9d1d9" textLength="67.2" lengthAdjust="spacingAndGlyphs">neofetch</text>
+  <g class="t0"><rect x="162.4" y="54" width="81.2" height="20" fill="#0d1117"/></g>
 
-  <text x="58" y="134" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="-1" fill="url(#name)">SHIN UIJIN</text>
+  <g class="f" style="animation-delay:1.00s"><rect x="33.0" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="41.2" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="82.2" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="90.4" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="106.8" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="115.0" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="172.4" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="180.6" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="197.0" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="205.2" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="221.6" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="229.8" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="238.0" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="279.0" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="287.2" y="95" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="30.0" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="38.2" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="79.2" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="87.4" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="103.8" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="112.0" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="169.4" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="177.6" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="194.0" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="202.2" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="218.6" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="226.8" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="235.0" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="276.0" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="284.2" y="92" width="7.4" height="16" rx="1.2" fill="url(#artg)"/></g>
+  <g class="f" style="animation-delay:1.07s"><rect x="33.0" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="41.2" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="82.2" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="90.4" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="106.8" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="115.0" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="172.4" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="180.6" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="197.0" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="205.2" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="221.6" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="229.8" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="238.0" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="246.2" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="279.0" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="287.2" y="112" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="30.0" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="38.2" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="79.2" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="87.4" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="103.8" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="112.0" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="169.4" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="177.6" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="194.0" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="202.2" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="218.6" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="226.8" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="235.0" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="243.2" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="276.0" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="284.2" y="109" width="7.4" height="16" rx="1.2" fill="url(#artg)"/></g>
+  <g class="f" style="animation-delay:1.14s"><rect x="33.0" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="41.2" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="82.2" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="90.4" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="106.8" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="115.0" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="172.4" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="180.6" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="197.0" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="205.2" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="221.6" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="229.8" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="246.2" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="254.4" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="279.0" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="287.2" y="129" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="30.0" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="38.2" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="79.2" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="87.4" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="103.8" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="112.0" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="169.4" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="177.6" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="194.0" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="202.2" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="218.6" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="226.8" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="243.2" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="251.4" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="276.0" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="284.2" y="126" width="7.4" height="16" rx="1.2" fill="url(#artg)"/></g>
+  <g class="f" style="animation-delay:1.21s"><rect x="33.0" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="41.2" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="82.2" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="90.4" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="106.8" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="115.0" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="131.4" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="139.6" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="172.4" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="180.6" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="197.0" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="205.2" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="221.6" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="229.8" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="254.4" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="262.6" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="279.0" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="287.2" y="146" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="30.0" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="38.2" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="79.2" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="87.4" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="103.8" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="112.0" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="128.4" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="136.6" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="169.4" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="177.6" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="194.0" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="202.2" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="218.6" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="226.8" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="251.4" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="259.6" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="276.0" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="284.2" y="143" width="7.4" height="16" rx="1.2" fill="url(#artg)"/></g>
+  <g class="f" style="animation-delay:1.28s"><rect x="41.2" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="49.4" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="57.6" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="65.8" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="74.0" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="82.2" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="106.8" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="115.0" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="139.6" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="147.8" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="156.0" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="164.2" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="172.4" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="197.0" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="205.2" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="221.6" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="229.8" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="262.6" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="270.8" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="279.0" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="287.2" y="163" width="7.4" height="16" rx="1.2" fill="#0f3d2e"/><rect x="38.2" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="46.4" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="54.6" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="62.8" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="71.0" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="79.2" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="103.8" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="112.0" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="136.6" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="144.8" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="153.0" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="161.2" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="169.4" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="194.0" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="202.2" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="218.6" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="226.8" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="259.6" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="267.8" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="276.0" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/><rect x="284.2" y="160" width="7.4" height="16" rx="1.2" fill="url(#artg)"/></g>
+  <text class="f" style="animation-delay:1.5s" x="30" y="210" font-size="12" fill="#8b949e">// shin uijin · backend developer</text>
 
-  <text x="60" y="176" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="22" fill="#a78bfa">❯</text>
-  <text x="86" y="176" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="22" fill="#7dd3fc" textLength="221" lengthAdjust="spacingAndGlyphs" clip-path="url(#typeClip)">Backend Developer</text>
-  <rect class="blink" x="88" y="157" width="11" height="24" rx="1" fill="#7dd3fc" fill-opacity=".85">
-    <animate attributeName="x" values="88;101;114;127;140;153;166;179;192;205;218;231;244;257;270;283;296;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;309;296;283;270;257;244;231;218;205;192;179;166;153;140;127;114;101;88;88;88;88;88;88;88" dur="6.60s" calcMode="discrete" repeatCount="indefinite"/>
-  </rect>
+  <text class="f" style="animation-delay:1.10s" x="345" y="100"><tspan fill="#58a6ff" font-weight="700">uijin</tspan><tspan fill="#8b949e">@</tspan><tspan fill="#58a6ff" font-weight="700">github</tspan></text>
+  <text class="f" style="animation-delay:1.19s" x="345" y="122"><tspan fill="#30363d">──────────────────</tspan></text>
+  <text class="f" style="animation-delay:1.28s" x="345" y="144"><tspan fill="#bc8cff" font-weight="700">Role</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">Backend Developer</tspan></text>
+  <text class="f" style="animation-delay:1.37s" x="345" y="166"><tspan fill="#bc8cff" font-weight="700">Lang</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">Java 17</tspan></text>
+  <text class="f" style="animation-delay:1.46s" x="345" y="188"><tspan fill="#bc8cff" font-weight="700">Stack</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">Spring Boot · MyBatis · MariaDB</tspan></text>
+  <text class="f" style="animation-delay:1.55s" x="345" y="210"><tspan fill="#bc8cff" font-weight="700">View</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">JSP · JavaScript · HTML/CSS</tspan></text>
+  <text class="f" style="animation-delay:1.64s" x="345" y="232"><tspan fill="#bc8cff" font-weight="700">APIs</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">Kakao Map · OpenWeather · Gemini</tspan></text>
+  <text class="f" style="animation-delay:1.73s" x="345" y="254"><tspan fill="#bc8cff" font-weight="700">Ships</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">MoveOn → movingon.kr</tspan></text>
+  <text class="f" style="animation-delay:1.82s" x="345" y="276"><tspan fill="#bc8cff" font-weight="700">School</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#c9d1d9">Korea Polytechnic · Big Data SW</tspan></text>
+  <g class="f" style="animation-delay:1.9s"><rect x="345" y="288" width="20" height="12" rx="1" fill="#484f58"/><rect x="367" y="288" width="20" height="12" rx="1" fill="#ff7b72"/><rect x="389" y="288" width="20" height="12" rx="1" fill="#3fb950"/><rect x="411" y="288" width="20" height="12" rx="1" fill="#d29922"/><rect x="433" y="288" width="20" height="12" rx="1" fill="#58a6ff"/><rect x="455" y="288" width="20" height="12" rx="1" fill="#bc8cff"/><rect x="477" y="288" width="20" height="12" rx="1" fill="#39c5cf"/><rect x="499" y="288" width="20" height="12" rx="1" fill="#f0f6fc"/></g>
 
-  <text x="60" y="214" font-family="'Segoe UI','Apple SD Gothic Neo','Malgun Gothic',Helvetica,Arial,sans-serif" font-size="15.5" fill="#94a3b8">Java · Spring Boot · MyBatis · MariaDB</text>
-  <line x1="60" y1="240" x2="410" y2="240" stroke="#2e3a63"/>
-  <text x="60" y="272" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="12" letter-spacing="3.5" fill="#818cf8">LEARN  /  BUILD  /  SHIP</text>
+  <text class="f" style="animation-delay:2.3s" x="28" y="318"><tspan fill="#3fb950" font-weight="700">uijin@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan></text>
+  <text x="162.4" y="318" fill="#c9d1d9" textLength="235.20000000000002" lengthAdjust="spacingAndGlyphs">./deploy.sh --service moveon</text>
+  <g class="t1"><rect x="162.4" y="304" width="249.2" height="20" fill="#0d1117"/></g>
+  <text class="f" style="animation-delay:4.7s" x="28" y="344"><tspan fill="#3fb950" font-weight="700">✔</tspan><tspan fill="#c9d1d9"> build</tspan><tspan fill="#8b949e">  ·  </tspan><tspan fill="#3fb950" font-weight="700">✔</tspan><tspan fill="#c9d1d9"> test</tspan><tspan fill="#8b949e">  ·  </tspan><tspan fill="#3fb950" font-weight="700">✔</tspan><tspan fill="#c9d1d9"> deploy</tspan><tspan fill="#8b949e">  →  </tspan><tspan fill="#39c5cf" text-decoration="underline">https://movingon.kr</tspan></text>
 
-  <!-- center orbit -->
-  <g transform="translate(470 160)">
-    <circle r="44" fill="none" stroke="url(#ring)" stroke-width="1.4" stroke-dasharray="3 6">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
-    </circle>
-    <circle r="29" fill="#11163a" stroke="url(#ring)" stroke-width="1.5"/>
-    <text y="7" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="19" font-weight="600" fill="#c4b5fd">{ }</text>
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
-      <circle cx="44" cy="0" r="4" fill="#7dd3fc"/>
-      <circle cx="44" cy="0" r="8" fill="#7dd3fc" fill-opacity=".2"/>
-    </g>
-  </g>
+  <text class="f" style="animation-delay:5.2s" x="28" y="374"><tspan fill="#3fb950" font-weight="700">uijin@github</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan></text>
+  <rect class="cur" x="162.4" y="361" width="9" height="17" fill="#c9d1d9"/>
 
-  <!-- terminal -->
-  <g class="float">
-    <rect x="534" y="46" width="320" height="228" rx="14" fill="#0a0f1f" fill-opacity=".92" stroke="#2e3a63"/>
-    <path d="M534 82 H854" stroke="#1f2a48"/>
-    <circle cx="556" cy="64" r="5.5" fill="#ff5f57"/>
-    <circle cx="574" cy="64" r="5.5" fill="#febc2e"/>
-    <circle cx="592" cy="64" r="5.5" fill="#28c840"/>
-    <text x="694" y="68" text-anchor="middle" font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="11" fill="#64748b">Developer.java</text>
-    <g font-family="'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace" font-size="13.5">
-    <text class="ln" style="animation-delay:0.60s" x="556" y="118" xml:space="preserve"><tspan fill="#c084fc">public class</tspan> <tspan fill="#7dd3fc">Developer</tspan> <tspan fill="#94a3b8">{</tspan></text>
-    <text class="ln" style="animation-delay:0.95s" x="556" y="143" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">name</tspan>    <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"신의진"</tspan><tspan fill="#94a3b8">;</tspan></text>
-    <text class="ln" style="animation-delay:1.30s" x="556" y="168" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">role</tspan>    <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"Backend"</tspan><tspan fill="#94a3b8">;</tspan></text>
-    <text class="ln" style="animation-delay:1.65s" x="556" y="193" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">stack</tspan>   <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"Spring Boot"</tspan><tspan fill="#94a3b8">;</tspan></text>
-    <text class="ln" style="animation-delay:2.00s" x="556" y="218" xml:space="preserve">  <tspan fill="#7dd3fc">String</tspan> <tspan fill="#e2e8f0">project</tspan> <tspan fill="#94a3b8">=</tspan> <tspan fill="#86efac">"MoveOn"</tspan><tspan fill="#94a3b8">;</tspan></text>
-    <text class="ln" style="animation-delay:2.35s" x="556" y="243" xml:space="preserve"><tspan fill="#94a3b8">}</tspan></text>
-    </g>
-    <rect class="blink" x="570" y="232" width="8" height="16" fill="#7dd3fc" fill-opacity=".85"/>
-  </g>
+  <rect x="0.5" y="0.5" width="899" height="399" rx="12" fill="url(#scan)"/>
 </svg>
